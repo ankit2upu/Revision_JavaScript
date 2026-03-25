@@ -11,4 +11,30 @@ let state=null;        // null   for standalone value, type=object
 
 
 
-// 2. non primitive data type
+// 2. non primitive data type (object key:value, collection of diff data type)
+
+let student={
+
+    name:"ankit",
+    address:"ballia",
+    age:23,
+    cgpa:7.44,
+    isPass:true,
+    subject:{
+        math:{
+            teacher:"ram Babu",
+            period:5,
+
+        },
+        Java:"Anno ",
+        period:7
+        
+       },
+    college:"knit"
+
+}
+
+
+console.table([student.name,student.address,student.age,student.cgpa,student.isPass,student.subject.math.teacher])
+
+
