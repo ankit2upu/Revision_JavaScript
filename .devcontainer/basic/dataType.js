@@ -38,3 +38,7 @@ let student={
 console.table([student.name,student.address,student.age,student.cgpa,student.isPass,student.subject.math.teacher])
 
 
+// key data type
+
+let mySymbol=Symbol("key")
+console.log(mySymbol)
