@@ -49,4 +49,30 @@ console.log(`my name is,${student.name}`); // my name is name change?
 
 
 
+//using construtor i.e singleton object
+
+// const sigleton= new Object()
+// console.log(sigleton);
+
+// const sigleton={}
+// sigleton.id=1
+// sigleton.name="ankit"
+// console.log([sigleton.id,sigleton.name]);
+
+// combination of objet
+const ob1={1:"a" ,2:"b"}
+const ob2={3:"c",4:"d"}
+const ob3={ob1,ob2}
+console.log(ob3);  //{ ob1: { '1': 'a', '2': 'b' }, ob2: { '3': 'c', '4': 'd' } } i.e object print
+const ob4=Object.assign({},ob1,ob2)
+console.log(ob4);     //{ '1': 'a', '2': 'b', '3': 'c', '4': 'd' } 
+const ob5={...ob1,...ob2}   //using spread parameter
+console.log(ob5)    //{ '1': 'a', '2': 'b', '3': 'c', '4': 'd' }
+
+
+
+
+
+
+
 
